@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gallery</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="navbar">  
+    <ul>
+        <li><a href="file:///C:/Users/AYongue/FinalProject/about.html">About</a></li>
+        <li><a href="file:///C:/Users/AYongue/FinalProject/recruitment.html">Recruitment</a></li>
+        <li><a href="file:///C:/Users/AYongue/FinalProject/calendar.html">Calendar</a></li>
+        <li><a href="file:///C:/Users/AYongue/FinalProject/gallery.html">Gallery</a></li>
+     
+            <!-- Wrap the image properly with a link -->
+            <a href="file:///C:/Users/AYongue/FinalProject/home.html">
+                <img class="navbar-img" src="img/DSP.jpg" alt="Insert image here" style="width: 15%; height: 100%;">
+            </a>
+        </ul>
+</div>
+
+<div class="galleryy">
+    <h1 class="topg">Gallery</h1>
+    <p id="p1">Below are some images and videos of different events the Iota Xi chapter of Delta Sigma Phi hosts:</p>
+</div>
+
+<!-- 1st Gallery -->
+<div class="gallery-container" id="gallery1">
+    <div class="gallery-image-container">
+        <p id="galEvent">Halloween Social</p>
+        <img id="gallery-image" src="halloween3.jpg" alt="Image 1">
+        <div id="description" class="image-description">This is an image of a desert.</div>
+        <div class="dots-container">
+            <span class="dot dot1" onclick="showImage(0)"></span>
+            <span class="dot dot2" onclick="showImage(1)"></span>
+            <span class="dot dot3" onclick="showImage(2)"></span>
+            <span class="dot dot4" onclick="showImage(3)"></span>
+        </div>
+    </div>
+
+    <div class="navigation-arrows">
+        <button id="prev" class="nav-arrow left">&#10094;</button>
+        <button id="next" class="nav-arrow right">&#10095;</button>
+    </div>
+</div>
+
+<!-- 2nd Gallery -->
+<div class="gallery-container" id="gallery2">
+    <div class="gallery-image-container">
+        <p id="galEvent2">Bid Day</p>
+        <img id="gallery-image2" src="img/bid4.jpg" alt="Image 2">
+        <div id="description2" class="image-description">This is an image of the mountains.</div>
+        <div class="dots-container">
+            <span class="dot dot1" onclick="showImage2(0)"></span>
+            <span class="dot dot2" onclick="showImage2(1)"></span>
+            <span class="dot dot3" onclick="showImage2(2)"></span>
+            <span class="dot dot4" onclick="showImage2(3)"></span>
+            <span class="dot dot5" onclick="showImage2(4)"></span>
+        </div>
+    </div>
+
+    <div class="navigation-arrows">
+        <button id="prev2" class="nav-arrow left">&#10094;</button>
+        <button id="next2" class="nav-arrow right">&#10095;</button>
+    </div>
+</div>
+
+<!-- 3rd Gallery -->
+<div class="gallery-container" id="gallery3">
+    <div class="gallery-image-container">
+        <p id="galEvent3">Rush Week</p>
+        <img id="gallery-image3" src="img/rush1.jpg" alt="Image 3">
+        <div id="description3" class="image-description">This is an image of a charity event.</div>
+        <div class="dots-container">
+            <span class="dot dot1" onclick="showImage3(0)"></span>
+            <span class="dot dot2" onclick="showImage3(1)"></span>
+            <span class="dot dot3" onclick="showImage3(2)"></span>
+        </div>
+    </div>
+
+    <div class="navigation-arrows">
+        <button id="prev3" class="nav-arrow left">&#10094;</button>
+        <button id="next3" class="nav-arrow right">&#10095;</button>
+    </div>
+</div>
+
+<!-- 4th Gallery -->
+<div class="gallery-container" id="gallery4">
+    <div class="gallery-image-container">
+        <p id="galEvent4">Intramurals</p>
+        <img id="gallery-image4" src="img/intra1.JPEG" alt="Image 4">
+        <div id="description4" class="image-description">This is an image from a leadership retreat.</div>
+        <div class="dots-container">
+            <span class="dot dot1" onclick="showImage4(0)"></span>
+            <span class="dot dot2" onclick="showImage4(1)"></span>
+            <span class="dot dot3" onclick="showImage4(2)"></span>
+        </div>
+    </div>
+
+    <div class="navigation-arrows">
+        <button id="prev4" class="nav-arrow left">&#10094;</button>
+        <button id="next4" class="nav-arrow right">&#10095;</button>
+    </div>
+</div>
+
+
+<div class="video-section">
+    <p id="galEvent5">Fraternity Chant</p>
+    <video controls>
+        <source src="img/vid.mov" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+<script>
+    // 1st Gallery Script
+    const images1 = [
+        { src: "img/halloween3.jpg", description: "Delta Sigma Phi and Zeta Tau Alpha" },
+        { src: "img/halloween4.jpg", description: "Halloween social banner" },
+        { src: "img/halloween2.jpg", description: "IFC brothers" },
+        { src: "img/halloween1.jpg", description: "Brothers at the social" }
+    ];
+
+    let currentIndex1 = 0;
+    const imageElement1 = document.getElementById("gallery-image");
+    const descriptionElement1 = document.getElementById("description");
+
+    function updateGallery1() {
+        imageElement1.src = images1[currentIndex1].src;
+        descriptionElement1.textContent = images1[currentIndex1].description;
+        const dots1 = document.querySelectorAll("#gallery1 .dot");
+        dots1.forEach(dot => dot.classList.remove("active"));
+        dots1[currentIndex1].classList.add("active");
+    }
+
+    function showImage(index) {
+        currentIndex1 = index;
+        updateGallery1();
+    }
+
+    document.getElementById("prev").addEventListener("click", () => {
+        currentIndex1 = (currentIndex1 > 0) ? currentIndex1 - 1 : images1.length - 1;
+        updateGallery1();
+    });
+
+    document.getElementById("next").addEventListener("click", () => {
+        currentIndex1 = (currentIndex1 < images1.length - 1) ? currentIndex1 + 1 : 0;
+        updateGallery1();
+    });
+
+    updateGallery1();
+
+    // 2nd Gallery Script
+    const images2 = [
+        { src: "img/bid4.jpg", description: "Delta Sigma Phi at Bid Day" },
+        { src: "img/bid2.jpg", description: "IFC at Bid Day" },
+        { src: "img/bid1.jpg", description: "Alex and Brandon" },
+        { src: "img/bid3.jpg", description: "IFC Committee" },
+        { src: "img/bid5.jpg", description: "Rush Banner" },
+    ];
+
+    let currentIndex2 = 0;
+    const imageElement2 = document.getElementById("gallery-image2");
+    const descriptionElement2 = document.getElementById("description2");
+
+    function updateGallery2() {
+        imageElement2.src = images2[currentIndex2].src;
+        descriptionElement2.textContent = images2[currentIndex2].description;
+        const dots2 = document.querySelectorAll("#gallery2 .dot");
+        dots2.forEach(dot => dot.classList.remove("active"));
+        dots2[currentIndex2].classList.add("active");
+    }
+
+    function showImage2(index) {
+        currentIndex2 = index;
+        updateGallery2();
+    }
+
+    document.getElementById("prev2").addEventListener("click", () => {
+        currentIndex2 = (currentIndex2 > 0) ? currentIndex2 - 1 : images2.length - 1;
+        updateGallery2();
+    });
+
+    document.getElementById("next2").addEventListener("click", () => {
+        currentIndex2 = (currentIndex2 < images2.length - 1) ? currentIndex2 + 1 : 0;
+        updateGallery2();
+    });
+
+    updateGallery2();
+
+    // 3rd Gallery Script
+    const images3 = [
+        { src: "img/rush1.jpg", description: "Rush week event: Top Golf" },
+        { src: "img/rush2.jpg", description: "Top Golf with our honorary member" },
+        { src: "img/rush3.jpg", description: "Rush week event: Alumni Night" },
+    ];
+
+    let currentIndex3 = 0;
+    const imageElement3 = document.getElementById("gallery-image3");
+    const descriptionElement3 = document.getElementById("description3");
+
+    function updateGallery3() {
+        imageElement3.src = images3[currentIndex3].src;
+        descriptionElement3.textContent = images3[currentIndex3].description;
+        const dots3 = document.querySelectorAll("#gallery3 .dot");
+        dots3.forEach(dot => dot.classList.remove("active"));
+        dots3[currentIndex3].classList.add("active");
+    }
+
+    function showImage3(index) {
+        currentIndex3 = index;
+        updateGallery3();
+    }
+
+    document.getElementById("prev3").addEventListener("click", () => {
+        currentIndex3 = (currentIndex3 > 0) ? currentIndex3 - 1 : images3.length - 1;
+        updateGallery3();
+    });
+
+    document.getElementById("next3").addEventListener("click", () => {
+        currentIndex3 = (currentIndex3 < images3.length - 1) ? currentIndex3 + 1 : 0;
+        updateGallery3();
+    });
+
+    updateGallery3();
+
+    // 4th Gallery Script
+    const images4 = [
+        { src: "img/intra1.JPEG", description: "Brothers at intramural kickball" },
+        { src: "img/intra2.JPEG", description: "Brothers at paintball" },
+        { src: "img/intra3.JPEG", description: "Brothers at intramural volleyball" },
+    ];
+
+    let currentIndex4 = 0;
+    const imageElement4 = document.getElementById("gallery-image4");
+    const descriptionElement4 = document.getElementById("description4");
+
+    function updateGallery4() {
+        imageElement4.src = images4[currentIndex4].src;
+        descriptionElement4.textContent = images4[currentIndex4].description;
+        const dots4 = document.querySelectorAll("#gallery4 .dot");
+        dots4.forEach(dot => dot.classList.remove("active"));
+        dots4[currentIndex4].classList.add("active");
+    }
+
+    function showImage4(index) {
+        currentIndex4 = index;
+        updateGallery4();
+    }
+
+    document.getElementById("prev4").addEventListener("click", () => {
+        currentIndex4 = (currentIndex4 > 0) ? currentIndex4 - 1 : images4.length - 1;
+        updateGallery4();
+    });
+
+    document.getElementById("next4").addEventListener("click", () => {
+        currentIndex4 = (currentIndex4 < images4.length - 1) ? currentIndex4 + 1 : 0;
+        updateGallery4();
+    });
+
+    updateGallery4();
+</script>
+
+
+
+
+
+
+<footer>
+    <div class="f1">  <img class="footer-img" src="img/DSP1.png" alt="Insert image here" style="width: 100%; height: 100%;"> </div>
+     <div class="f2">
+     <h1>Contact Us</h1>
+     <ul>
+         <li>803-944-9853</li>
+         <li>aikendeltasig@gmail.com</li>
+         <li>@deltasigusca</li>
+         <li></li>
+     </ul>
+     </div>
+     <div class="f3">
+         <h1>Links</h1>
+         <ul>
+             <li><a href="https://www.redcross.org">American Red Cross</a></li>
+         <li><a href="https://www.aspca.org">ASPCA</a></li>
+         <li><a href="https://www.deltasig.org">Delta Sigma Phi</a></li>
+         <li><a href="https://usca.deltasig.org/">Local Website</a></li>
+         </ul>
+     </div>
+     <div class="f4">
+         <h1>Address</h1>
+         <ul>
+             <li class="no-hover">471 University Parkway</li>
+             <li>Aiken, SC 29801</li>
+             <li></li>
+         </ul>
+     </div>
+ </footer>
+</body>
+</html>
