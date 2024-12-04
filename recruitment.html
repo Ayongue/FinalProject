@@ -7,13 +7,13 @@
 <body>
 <div class="navbar">  
     <ul>
-        <li><a href="file:///C:/Users/AYongue/FinalProject/about.html">About</a></li>
-        <li><a href="file:///C:/Users/AYongue/FinalProject/recruitment.html">Recruitment</a></li>
-        <li><a href="file:///C:/Users/AYongue/FinalProject/calendar.html">Calendar</a></li>
-        <li><a href="file:///C:/Users/AYongue/FinalProject/gallery.html">Gallery</a></li>
+        <li><a href="file:///C:/Users/AYongue/CSCI225/FinalProject/about.html">About</a></li>
+        <li><a href="file:///C:/Users/AYongue/CSCI225/FinalProject/recruitment.html">Recruitment</a></li>
+        <li><a href="file:///C:/Users/AYongue/CSCI225/FinalProject/calendar.html">Calendar</a></li>
+        <li><a href="file:///C:/Users/AYongue/CSCI225/FinalProject/gallery.html">Gallery</a></li>
      
             <!-- Wrap the image properly with a link -->
-            <a href="file:///C:/Users/AYongue/FinalProject/home.html">
+            <a href="file:///C:/Users/AYongue/CSCI225/FinalProject/home.html">
                 <img class="navbar-img" src="img/DSP.jpg" alt="Insert image here" style="width: 15%; height: 100%;">
             </a>
         </ul>
@@ -54,6 +54,38 @@
         </ul>
     </div>
 </footer>
+<script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-auth-compat.js"></script>
+<script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyBVOceyW9MDtKnw_N4j2sM3oyucEQGcLnI",
+      authDomain: "database225-1fa60.firebaseapp.com",
+      projectId: "database225-1fa60",
+      storageBucket: "database225-1fa60.firebasestorage.app",
+      messagingSenderId: "764143728369",
+      appId: "1:764143728369:web:96ec6400a5604eb8c19b50",
+      measurementId: "G-CXL2MHW5J8"
+    
+    }; 
+    // Initialize Firebase
+      const firebaseApp = firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore();
+      const auth = firebaseApp.auth();
+
+    // Save the list to database
+
+
+
+    //Test:::::::::::
+  // data = {
+      //name: "Alex",
+      //Score: 100,
+      //Age: 20
+   //};
+
+   //db.collection('test').add(data);
+</script>
 
 </body>
 </html>
