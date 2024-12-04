@@ -37,7 +37,7 @@ html, body {
 
 /* Navbar list items */
 .navbar ul li {
-    font-size: 30px;
+    font-size: 24px;
     letter-spacing: 2px;
     text-transform: uppercase;
     color: white;
@@ -196,9 +196,23 @@ footer {
     margin-top: 200px;
 }
 
+#rfooter {
+    position: relative;
+    margin-top: -36px;
+}
+
 .galleryy {
-    margin-top: 70px;
-    
+    display: flex;
+    flex-direction: column;
+    margin-top: 75px;
+
+}
+
+.recruit {
+    display: flex;
+    flex-direction: column;
+    margin-top: 75px;
+
 }
 
 /* Styling for .topg section */
@@ -214,7 +228,7 @@ footer {
 
 /* Styling for #p1 */
 #p1 {
-    font-size: 40px;
+    font-size: 36px;
     background-color: rgb(234, 170, 0);
     padding-left: 100px;
     padding-right: 100px;
@@ -350,7 +364,7 @@ a:hover {
 /* Event Title: Styling for event titles */
 #galEvent, #galEvent2, #galEvent3, #galEvent4, #galEvent5 {
     font-family: 'Uni Sans', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     text-decoration: underline;
     margin: 20px 0;
 }
@@ -365,4 +379,80 @@ a:hover {
     height: auto;
     border: 2px solid #ddd;
     border-radius: 10px;
+}
+
+#r1{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background-color: #333333;
+    padding: 20px;
+    margin-top: -36px;
+}
+#p2 {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.8;
+    font-family: 'proxima-nova', sans-serif;
+    color: white;
+}
+#r2{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background-color: #333333;
+    padding: 20px;
+    margin-top: -36px;
+}
+
+#rush {
+    font-size: 36px;
+    background-color: rgb(234, 170, 0);
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
+    margin-top: 0;
+    font-family: 'Uni Sans', sans-serif;
+}
+
+#r3{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+    margin-top: -36px;
+    align-items: center;
+    background-color: #333333;
+}
+#formc{
+    background-color: white;
+    color: #333333;
+    border-style: dashed;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'proxima-nova', sans-serif;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    
+}
+form {
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px;
+    text-align: center;
+}
+
+#rush1 {
+    font-size: 36px;
+    background-color: rgb(234, 170, 0);
+    padding-left: 100px;
+    padding-right: 100px;
+    text-align: center;
+    margin-top: 0;
+    font-family: 'Uni Sans', sans-serif;
+    color: rgb(234, 170, 0);
 }

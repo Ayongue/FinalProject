@@ -1,49 +1,107 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title> Gallery </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-<div class="navbar">  
+<div class="navbar">
     <ul>
         <li><a href="about.html">About</a></li>
         <li><a href="recruitment.html">Recruitment</a></li>
         <li><a href="calendar.html">Calendar</a></li>
         <li><a href="gallery.html">Gallery</a></li>
-     
-            <!-- Wrap the image properly with a link -->
-            <a href="home.html">
-                <img class="navbar-img" src="img/DSP.jpg" alt="Insert image here" style="width: 15%; height: 100%;">
-            </a>
-        
-        </ul>
-</div>
-<div class="galleryy">
-<h1 class="topg">Recruitment</h1>
 
-<p id="p1">Insert words here</p>
+        <!-- Wrap the image properly with a link -->
+        <a href="home.html">
+            <img class="navbar-img" src="img/DSP.jpg" alt="Insert image here" style="width: 15%; height: 100%;">
+        </a>
+    </ul>
+</div>
+
+<div class="recruit">
+    <h1 class="topg">Recruitment</h1>
+
+    <p id="p1">Recruitment Process</p>
+    <div id="r1">
+        <img class="r-img" src="img/pic.JPEG" alt="Insert image here" style="width: 50%; height: 50%;">
+        <p id="p2">Delta Sigma Phi's recruitment process begins with Rush Week, an exciting and dynamic introduction to the fraternity. During Rush Week, potential new members (PNMs) participate in a series of events, providing them with an opportunity to interact with current brothers, learn about the fraternity's values, and determine if it’s the right fit for them. The week culminates in Bid Day, when selected PNMs receive formal invitations to join the fraternity. Following Bid Day, new members enter an 8-week period of pledging, where they undergo a comprehensive process designed to instill the fraternity’s principles, traditions, and brotherhood. This period includes educational sessions, community service, leadership development, and bonding activities. At the end of this process, the new members are initiated, officially becoming brothers of Delta Sigma Phi. The entire journey is crafted to ensure that each new member is fully prepared to contribute meaningfully to the fraternity and uphold its values throughout their college years and beyond.</p>
+    </div>
+
+    <p id="rush">Rush Week</p>
+
+    <div id="r2">
+        <p id="p2">Rush Week is a highly anticipated event for college students, particularly those interested in joining fraternities and sororities. It typically takes place at the beginning of the academic year and is a time when Greek organizations host a series of social events, information sessions, and activities to recruit new members. During Rush Week, potential recruits, also known as "rushees," have the opportunity to meet current members, learn about the values and traditions of different organizations, and determine which group aligns with their personal and academic goals. For those going through the process, it can be an exciting yet overwhelming time, as they navigate the social dynamics and make decisions that may shape their college experience. It's important to note that Rush Week varies from school to school, with some institutions hosting formal recruitment events, while others may have a more informal approach.</p>
+        <img class="r-img" src="img/alum.jpg" alt="Insert image here" style="width: 50%; height: 50%;">
+    </div>
+
+    <p id="rush">Initiation</p>
+
+    <div id="r2">
+        <img class="r-img" src="img/pic2.JPEG" alt="Insert image here" style="width: 50%; height: 50%;">
+        <p id="p2">Fraternity initiation is a significant and ceremonial process in which new members, often referred to as "pledges," are formally inducted into a fraternity. This ritual marks the transition from being an outsider to becoming part of a close-knit brotherhood, bound by shared values and traditions. Initiation typically involves a series of tests, challenges, or symbolic acts designed to demonstrate commitment, loyalty, and readiness to contribute to the fraternity's legacy. While the specifics of the initiation process vary between organizations, it often includes rituals, oaths, and responsibilities that emphasize personal growth, leadership, and a sense of belonging. For many, fraternity initiation is seen as a rite of passage, fostering lifelong bonds and a strong sense of community.</p>
+    </div>
+
+    <p id="rush">Interest Form</p>
+
+    <div id="r3">
+        <img class="r-img" src="img/pic3.png" alt="Insert image here" style="width: 25%; height: 25%;">
+
+        <div id="formc">
+            <form id="recruitmentForm">
+                <p>
+                    <label>First Name: <input type="text" name="fn" ></label>
+                    <br><br>
+                    <label>Last Name: <input type="text" name="ln" ></label>
+                    <br><br>
+                    <label>Major: <input type="text" name="major" ></label>
+                    <br><br>
+                    <label>Email: <input type="email" name="email" placeholder="XXXXX@usca.edu" ></label>
+                    <br><br>
+                    <label>Phone: <input type="tel" name="phone" placeholder="(xxx)-xxx-xxxx"></label>
+                    <br><br>
+
+                    Please select your class:
+                    <select name="class" size="1" required>
+                        <option value="freshman">Freshman</option>
+                        <option value="sophomore">Sophomore</option>
+                        <option value="junior">Junior</option>
+                        <option value="senior">Senior</option>
+                    </select>
+                    <br><br>
+
+                    <input type="submit" value="Submit">
+                </p>
+            </form>
+        </div>
+    </div>
+    <p id="rush1">R</p>
+
+
 </div>
 
 <!-- Footer Section -->
-<footer>
-   <div class="f1">  <img class="footer-img" src="img/DSP1.png" alt="Insert image here" style="width: 100%; height: 100%;"> </div>
+<footer id="rfooter">
+    <div class="f1">
+        <img class="footer-img" src="img/DSP1.png" alt="Insert image here" style="width: 100%; height: 100%;">
+    </div>
     <div class="f2">
-    <h1>Contact Us</h1>
-    <ul>
-        <li>803-944-9853</li>
-        <li>aikendeltasig@gmail.com</li>
-        <li>@deltasigusca</li>
-        <li></li>
-    </ul>
+        <h1>Contact Us</h1>
+        <ul>
+            <li>803-944-9853</li>
+            <li>aikendeltasig@gmail.com</li>
+            <li>@deltasigusca</li>
+        </ul>
     </div>
     <div class="f3">
         <h1>Links</h1>
         <ul>
             <li><a href="https://www.redcross.org">American Red Cross</a></li>
-        <li><a href="https://www.aspca.org">ASPCA</a></li>
-        <li><a href="https://www.deltasig.org">Delta Sigma Phi</a></li>
-        <li><a href="https://usca.deltasig.org/">Local Website</a></li>
+            <li><a href="https://www.aspca.org">ASPCA</a></li>
+            <li><a href="https://www.deltasig.org">Delta Sigma Phi</a></li>
+            <li><a href="https://usca.deltasig.org/">Local Website</a></li>
         </ul>
     </div>
     <div class="f4">
@@ -51,41 +109,67 @@
         <ul>
             <li class="no-hover">471 University Parkway</li>
             <li>Aiken, SC 29801</li>
-            <li></li>
         </ul>
     </div>
 </footer>
+
+<!-- Firebase SDKs -->
 <script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-app-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore-compat.js"></script>
 <script src="https://www.gstatic.com/firebasejs/11.0.2/firebase-auth-compat.js"></script>
+
 <script>
     const firebaseConfig = {
-      apiKey: "AIzaSyBVOceyW9MDtKnw_N4j2sM3oyucEQGcLnI",
-      authDomain: "database225-1fa60.firebaseapp.com",
-      projectId: "database225-1fa60",
-      storageBucket: "database225-1fa60.firebasestorage.app",
-      messagingSenderId: "764143728369",
-      appId: "1:764143728369:web:96ec6400a5604eb8c19b50",
-      measurementId: "G-CXL2MHW5J8"
-    
-    }; 
+        apiKey: "AIzaSyBVOceyW9MDtKnw_N4j2sM3oyucEQGcLnI",
+        authDomain: "database225-1fa60.firebaseapp.com",
+        projectId: "database225-1fa60",
+        storageBucket: "database225-1fa60.firebasestorage.app",
+        messagingSenderId: "764143728369",
+        appId: "1:764143728369:web:96ec6400a5604eb8c19b50",
+        measurementId: "G-CXL2MHW5J8"
+    };
+
     // Initialize Firebase
-      const firebaseApp = firebase.initializeApp(firebaseConfig);
-      const db = firebase.firestore();
-      const auth = firebaseApp.auth();
+    const firebaseApp = firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+    const auth = firebaseApp.auth();
 
-    // Save the list to database
+    // Handle form submission
+    const form = document.querySelector('#recruitmentForm');
+    form.addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent form submission to server
 
+        // Get the values from the form fields
+        const firstName = form.querySelector('[name="fn"]').value;
+        const lastName = form.querySelector('[name="ln"]').value;
+        const major = form.querySelector('[name="major"]').value;
+        const email = form.querySelector('[name="email"]').value;
+        const phone = form.querySelector('[name="phone"]').value;
+        const classYear = form.querySelector('[name="class"]').value;
 
+        // Create an object to store the form data
+        const formData = {
+            firstName,
+            lastName,
+            major,
+            email,
+            phone,
+            classYear
+        };
 
-    //Test:::::::::::
-  // data = {
-      //name: "Alex",
-      //Score: 100,
-      //Age: 20
-   //};
-
-   //db.collection('test').add(data);
+        // Add the form data to Firestore (in the 'recruitment' collection)
+        db.collection('FinalProject')
+            .add(formData)
+            .then(() => {
+                console.log("Form data successfully submitted!");
+                alert("Thank you for submitting your interest form!");
+                form.reset(); // Clear form fields after submission
+            })
+            .catch((error) => {
+                console.error("Error submitting form data: ", error);
+                alert("There was an error submitting your form.");
+            });
+    });
 </script>
 
 </body>
