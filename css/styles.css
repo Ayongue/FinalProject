@@ -6,6 +6,7 @@ html, body {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
+    background-color: #333333;
     
     
 }
@@ -201,10 +202,15 @@ footer {
     margin-top: -36px;
 }
 
+#gfooter {
+    position: relative;
+    margin-top: -36px;
+}
 .galleryy {
     display: flex;
     flex-direction: column;
     margin-top: 75px;
+    
 
 }
 
@@ -273,6 +279,10 @@ a:hover {
     position: relative;
     flex-direction: column;
     margin: 20px auto; /* Center the gallery containers */
+    background-color: white;
+    border: 4px solid #000;
+    border-radius: 50px;
+    border-color: rgb(234, 170, 0);
 }
 
 /* Image Container: Centering image and description properly */
@@ -285,6 +295,7 @@ a:hover {
     flex-direction: column; 
     justify-content: center; 
     align-items: center;
+    
 }
 
 /* Image: Uniform size for all images */
@@ -341,7 +352,7 @@ a:hover {
 /* Dots: Consistent placement and styling */
 .dots-container {
     position: relative;
-    top: 20px;
+    top: 40px;
     display: flex;
     justify-content: center;
 }
@@ -371,11 +382,21 @@ a:hover {
 
 .video-section {
     text-align: center;
-    margin-top: 50px;
+    border: 4px solid #000;
+    border-radius: 50px;
+    border-color: rgb(234, 170, 0);
+
+    height: 400px;  /* Set a fixed height for the galleries */
+    width: 600px;   /* Set a fixed width for the galleries */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px auto; /* Center the gallery containers */
+    background-color: white;
 }
 
 .video-section video {
-    max-width: 40%;
+    max-width: 80%;
     height: auto;
     border: 2px solid #ddd;
     border-radius: 10px;
@@ -455,4 +476,26 @@ form {
     margin-top: 0;
     font-family: 'Uni Sans', sans-serif;
     color: rgb(234, 170, 0);
+}
+
+#events li {
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.8;
+    font-family: 'proxima-nova', sans-serif;
+    color: white;
+}
+#cfooter {
+    position: relative;
+    margin-top: -36px;
+}
+
+#eventu {
+    text-align: left;
+    font-size: 18px;
+    line-height: 1.8;
+    font-family: 'proxima-nova', sans-serif;
+    color: white;
+    text-decoration: underline;
+    font-style: italic;
 }
