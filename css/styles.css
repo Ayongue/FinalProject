@@ -499,3 +499,77 @@ form {
     text-decoration: underline;
     font-style: italic;
 }
+
+.mission-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+    background-color: #333; /* Optional: Add a background for contrast */
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners for styling */
+
+}
+
+.mission-text {
+    width: 50%;
+    color: white; /* Text color set to white */
+}
+
+.mission-text h2 {
+    font-weight: bold;
+    color: white; /* Ensure the heading is white */
+}
+
+#ms2{
+    font-weight: bold; 
+    font-size: 36px; 
+    font-family: 'Georgia', serif; 
+    color: white; 
+    margin-bottom: 10px; 
+    text-align: left;
+}
+
+#ms1{
+    font-size: 30px; 
+    line-height: 1.5; 
+    color: white; 
+    text-align: left; 
+    margin: 0 auto; 
+    max-width: 800px;
+}
+
+.mission-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: white; /* Ensure the paragraph text is white */
+}
+
+.mission-image img {
+    max-width: 45%;
+    height: auto;
+    border-radius: 8px;
+}
+#q {
+    font-size: 30px; 
+    line-height: 1.5; 
+    color: white; 
+    text-align: center;
+    margin: 0 auto; 
+    max-width: 800px;
+}
+#q1{
+    font-weight: bold; 
+    font-size: 36px; 
+    font-family: 'Georgia', serif; 
+    color: white; 
+    margin-bottom: 10px;
+}
+#q3{
+    font-size: 30px; 
+    line-height: 1.5; 
+    color: white; 
+    text-align: center; 
+    margin: 0 auto; 
+    max-width: 800px;
+}
