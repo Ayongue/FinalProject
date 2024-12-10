@@ -3,6 +3,8 @@
 <head>
     <title>Gallery</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 
 </head>
 <body>
@@ -100,7 +102,35 @@
 <p id="rush1">R</p>
 
 
-
+<script>
+    // JavaScript/jQuery to toggle navbar visibility on scroll
+    $(document).ready(function() {
+        var lastScrollTop = 0; // Variable to store the last scroll position
+        var navbar = $('.navbar'); // Select the navbar by class
+        
+        // Make sure the navbar is positioned correctly for visibility
+        navbar.css('position', 'fixed');
+        navbar.css('top', '0');
+        navbar.css('width', '100%');
+        
+        $(window).scroll(function() {
+            var scrollTop = $(this).scrollTop(); // Get current scroll position
+        
+            // Check if the user is scrolling down or up
+            if (scrollTop > lastScrollTop) {
+                // If scrolling down, slide up the navbar
+                navbar.slideUp();
+            } else {
+                // If scrolling up, slide down the navbar
+                navbar.slideDown();
+            }
+        
+            // Update the last scroll position
+            lastScrollTop = scrollTop;
+        });
+    });
+    
+    </script>
 
 <!-- Footer Section -->
 <footer id="cfooter">
