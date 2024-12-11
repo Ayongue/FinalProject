@@ -115,6 +115,100 @@
     </video>
 </div>
 
+<div id="comments">
+
+    <form>
+        <p id="C">Comments</p>
+
+        <p>
+            <label> Halloween Social:
+                <input type="text" id="halloweenSocial">
+            </label>
+        </p>
+    
+        <p id="checkmessage1"></p>
+    
+        <p>
+            <label> Bid Day:
+                <input type="text" id="bidDay">
+            </label>
+        </p>
+    
+        <p id="checkmessage2"></p>
+    
+        <p>
+            <label> Rush Week:
+                <input type="text" id="rushWeek">
+            </label>
+        </p>
+    
+        <p id="checkmessage3"></p>
+    
+        <p>
+            <label> Intramurals:
+                <input type="text" id="intramurals">
+            </label>
+        </p>
+    
+        <p id="checkmessage4"></p>
+    
+        <p>
+            <label> Fraternity Chant:
+                <input type="text" id="fraternityChant">
+            </label>
+        </p>
+    
+        <p id="checkmessage5"></p>
+    </form>
+
+    <script>
+        // Event handler for Halloween Social input
+        function updateHalloweenSocial() {
+            const value = document.getElementById('halloweenSocial').value;
+            document.getElementById('checkmessage1').textContent = value;
+        }
+    
+        // Event handler for Bid Day input
+        function updateBidDay() {
+            const value = document.getElementById('bidDay').value;
+            document.getElementById('checkmessage2').textContent = value;
+        }
+    
+        // Event handler for Rush Week input
+        function updateRushWeek() {
+            const value = document.getElementById('rushWeek').value;
+            document.getElementById('checkmessage3').textContent = value;
+        }
+    
+        // Event handler for Intramurals input
+        function updateIntramurals() {
+            const value = document.getElementById('intramurals').value;
+            document.getElementById('checkmessage4').textContent = value;
+        }
+    
+        // Event handler for Fraternity Chant input
+        function updateFraternityChant() {
+            const value = document.getElementById('fraternityChant').value;
+            document.getElementById('checkmessage5').textContent = value;
+        }
+    
+        // Register event listeners for each input field
+        document.getElementById('halloweenSocial').addEventListener('blur', updateHalloweenSocial);
+        document.getElementById('bidDay').addEventListener('blur', updateBidDay);
+        document.getElementById('rushWeek').addEventListener('blur', updateRushWeek);
+        document.getElementById('intramurals').addEventListener('blur', updateIntramurals);
+        document.getElementById('fraternityChant').addEventListener('blur', updateFraternityChant);
+    </script>
+</div>
+
+
+
+
+
+
+
+
+
 <script>
     // 1st Gallery Script
     const images1 = [
