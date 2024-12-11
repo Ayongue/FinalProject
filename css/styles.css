@@ -43,8 +43,7 @@ html, body {
     text-transform: uppercase;
     color: white;
     font-weight: 300;
-    font-family: 'Uni Sans', sans-serif !important;
-    text-decoration: underline;
+    font-family: 'Georgia', serif; 
     transition: all 0.3s ease;
     padding: 0 40px; /* Adjust padding to reduce space between items */
 }
